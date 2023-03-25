@@ -1,0 +1,208 @@
+// Home Page
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+.mycontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.container-one {
+    width: 80%;
+    margin-bottom: 100px;
+
+    .inner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .des-box-left {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+
+            .buttons {
+                width: 50%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+
+        .img-box-right {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+}
+
+.container-two {
+    width: 80%;
+    margin-bottom: 100px;
+    
+    .main-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+
+            .card {
+                width: 90%;
+                border: none;
+            }
+        }
+    }
+}
+
+// // NAVBAR
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100px;
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100vw;
+        justify-items: center;
+        align-items: center;
+
+        .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+
+            div {
+                width: 120px;
+            }
+        }
+    }
+}
+
+// // inner container three
+
+.container-three {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+// // inner container four
+
+.container-four {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 100px;
+
+    .categories {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+// // inner-container-five
+
+.container-five {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+
+    .des-box {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.container-six {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 100px;
+    margin-left: 150px;
+
+    .des-box {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-right: 20px;
+        align-items: center;
+
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .inner-cards {
+            padding: 15px;
+            width: 300px;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+        }
+
+        .sample-cards {
+            margin-bottom: 15px;
+        }
+        .name {
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .description {
+            font-size: 10px;
+        }
+    }
+}
+
+//footer 
+
+footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .box-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        .list {
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .box-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
