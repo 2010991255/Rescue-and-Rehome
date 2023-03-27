@@ -3,12 +3,31 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  overflow-x: hidden; }
-
 main {
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: auto; }
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100px; }
+  nav .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center; }
+    nav .nav-container .logo a {
+      text-decoration-style: none;
+      color: black; }
+    nav .nav-container .logo a:hover {
+      text-decoration: none; }
+    nav .nav-container .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center; }
+      nav .nav-container .list div {
+        width: 120px; }
 
 .mycontainer {
   width: 100%;
@@ -54,29 +73,24 @@ main {
         width: 90%;
         border: none; }
 
-nav {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 100px; }
-  nav .nav-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100vw;
-    justify-items: center;
-    align-items: center; }
-    nav .nav-container .list {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      justify-items: center; }
-      nav .nav-container .list div {
-        width: 120px; }
-
 .container-three {
   width: 80%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
   justify-items: center;
   margin-bottom: 100px; }
+  .container-three .caurousel {
+    background-color: antiquewhite;
+    width: 80rem;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    overflow-x: auto; }
+    .container-three .caurousel .item {
+      height: 200px;
+      width: 300px;
+      margin: 20px;
+      background-color: aqua; }
 
 .container-four {
   width: 80%;
@@ -123,6 +137,8 @@ nav {
       align-items: center; }
     .container-six .cards .sample-cards {
       margin-bottom: 15px; }
+      .container-six .cards .sample-cards img {
+        border-radius: 50%; }
     .container-six .cards .name {
       margin-bottom: 25px;
       font-size: 30px; }
@@ -130,7 +146,7 @@ nav {
       font-size: 10px; }
 
 footer {
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr; }
   footer .box-left {
@@ -144,4 +160,16 @@ footer {
   footer .box-right {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center; }
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .container .des-box-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center; }
+  .container .img-box-left {
+    display: grid;
     align-items: center; }

@@ -9,8 +9,7 @@ const sass = require('node-sass-middleware');
 app.use(
     sass({
         src: __dirname + '/styles',
-        dest: __dirname + '/public', 
-        debug: true                
+        dest: __dirname + '/public'             
     })
 );
 
