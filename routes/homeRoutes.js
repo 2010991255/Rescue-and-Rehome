@@ -10,7 +10,7 @@ router.get('/pet_description', (req, res) => {
 })
 
 router.get('/pet_supply', (req, res) => {
-    res.render('petSupply')
+    res.render('myPet')
 })
 
 module.exports = router

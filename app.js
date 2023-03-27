@@ -14,6 +14,7 @@ app.use(
 );
 
 const home_route=require('./routes/homeRoutes')
+const pet_routes=require('./routes/pet/petRoutes')
 
 app.set('view engine', 'ejs')
 app.engine('ejs', engine)
