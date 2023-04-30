@@ -5,7 +5,7 @@ router.get('/',  (req, res) => {
     res.render('home')
 })
 
-router.get('/pet_description', (req, res) => {
+router.get('/FindPets', (req, res) => {
     res.render('petDescription')
 })
 
