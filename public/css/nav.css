@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
 
-nav{
+/* Default styles */
+nav {
     display: grid;
     grid-template-columns: 1fr;
     height: 100px;
-    width: 100vw;
-    background-color: white;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.nav-container{
+.nav-container {
     display: grid;
     overflow: hidden;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
     justify-items: center;
     align-items: center;
 }
@@ -27,28 +25,105 @@ nav{
     line-height: 49px;
 }
 
-.pet-supply a{
+.about-us:hover {
+    cursor: pointer;
+}
+
+.about-us a {
+    cursor: pointer;
     color: #212529;
 }
 
-a:hover{
+.find-pets {
+    cursor: pointer;
+}
+
+.support {
+    cursor: pointer;
+}
+
+.pet-supply a {
+    color: #212529;
+}
+
+a:hover {
     text-decoration: none;
 }
 
 .list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     font-weight: 700;
 }
 
-.list div{
+.list div {
     width: 120px;
 }
 
-.log-up{
+.log-up {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: center;
     color: #2356A9;
     font-weight: 700;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.Sign-Up {
+    cursor: pointer;
+}
+
+.find-pets a {
+    color: #212529;
+}
+
+.support a {
+    color: #212529;
+}
+
+.login a {
+    color : #FD9789;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        grid-template-columns: 1fr;
+    }
+    .logo a {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .list div {
+        width: 80px;
+    }
+    .log-up {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .logo a {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .list div {
+        width: 60px;
+    }
 }
